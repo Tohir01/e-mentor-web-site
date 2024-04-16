@@ -1,0 +1,153 @@
+/* Showcase section */
+@import "../abstract/variables";
+.showcase{
+  width: 100%;
+  background-color: $mainColor;
+
+    &__content {
+        padding: 20px 0 120px;
+        display: flex;
+        justify-content: space-between;
+        color: #fdfdfd;
+
+        @media screen and (max-width:991px) {
+          flex-wrap: wrap;
+          gap: 40px;
+        } 
+    }
+
+    &__left {
+
+      @media screen and (max-width:991px) {
+        order: 2;
+        width: 45%;
+       } 
+
+       @media screen and (max-width:768px) {
+        width: 40%;  
+       } 
+
+       @media screen and (max-width:576px) {
+        width: 100%;
+        padding-top: 50px;
+       } 
+
+       @media screen and (max-width:500px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       } 
+   
+
+      &-social {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        img {
+          width: 22px;
+        }
+
+        @media screen and (max-width:991px) {
+          flex-direction: row;
+         } 
+     
+      }
+
+      &-imgbox {
+        padding-top: 100px;
+
+        @media screen and (max-width:576px) {
+          padding-top: 50px;
+         } 
+      }
+    }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width:991px) {
+     order: 1;
+    } 
+
+  }
+
+  &__title {
+      width: 500px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 3.625rem;
+      padding: 40px 0;
+
+      @media screen and (max-width:991px) {
+        width: 60%;
+      } 
+
+      @media screen and (max-width:991px) {
+          font-size: 2.7rem;
+          width: 80%;
+      } 
+
+      @media screen and (max-width:768px) {
+        width: 100%;
+      } 
+
+      @media screen and (max-width:576px) {
+          font-size: 2rem;
+      } 
+  }
+
+  &__desc{
+      width: 55%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 50px;
+      text-align: center;
+
+      @media screen and (max-width:768px) {
+        width: 100%;
+      } 
+  }
+
+  &__button {
+     background-color: #FA9F42;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+
+    &-text {
+      padding-top: 100px;
+
+      @media screen and (max-width:576px) {
+        padding-top: 50px;
+       } 
+    }
+    @media screen and (max-width:991px) {
+      order: 3;
+     } 
+
+     @media screen and (max-width:768px) {
+      width: 40%;  
+     } 
+
+     @media screen and (max-width:576px) {
+      width: 100%;
+      align-items: center;
+     } 
+
+     @media screen and (max-width:500px) {
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     } 
+  }
+
+}
