@@ -1,0 +1,60 @@
+@import "../abstract/variables";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  // body{
+  //   // font-family: 'Cardo';
+  //   // background-color: #F5F5F5;
+  // }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s ease-in-out;
+  }
+  
+  a,
+  button,
+  i {
+    cursor: pointer;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  button,input {
+    border: none;
+    outline: none;
+  }
+  
+  section {
+    width: 100%;
+  }
+  
+  .container{
+    width: 90%;
+    margin:0 auto;
+    max-width: 1400px;
+
+    @media screen and (max-width:768px) {
+      width: 90%;
+    }
+}
+  
+  
